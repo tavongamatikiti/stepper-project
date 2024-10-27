@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout.jsx";
 import NotFound from "./components/NotFound.jsx";
 import Home from "./pages/Home.jsx";
+import Challenges from "./pages/Challenges.jsx";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path="*" component={NotFound} />
+          <Route path="/solution" element={<Challenges />} /> {/* Fixed */}
+          <Route path="*" element={<NotFound />} /> {/* Fixed */}
         </Route>
       </Routes>
     </Router>

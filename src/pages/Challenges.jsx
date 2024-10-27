@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import ELabChallenges from "../components/ELabChallenges.jsx";
 
 const Challenges = () => {
@@ -10,15 +9,19 @@ const Challenges = () => {
       subtitle: "Elevator Pitch",
       description:
         "Here's our elevator pitch introducing our names, country, interests, and a fun fact. We shared our passions, why we care about these issues, our goals for solving them, and the unique contributions each of us brings to the team.",
-      videoId: "your-video-id-1", // Replace with actual YouTube video IDs
+      videoId: "nxg_Q88WgNQ", // Replace with actual YouTube video IDs
     },
     {
       id: 2,
       title: "Challenge 2",
       subtitle: "Discover Africa",
       description:
-        "For this challenge, Sorwazini uncovered and shared the story of the Land of a Thousand Hills, Rwanda, through our gossip television channel. We explored fascinating facts about Rwanda, addressed common misconceptions, highlighted its uniqueness, and discussed the challenges facing this great country.",
-      videoId: "your-video-id-2",
+        "As Big Steppers, we immersed ourselves in the vibrant world of the Intore dance, discovering its rich cultural significance in Rwanda. Through our exploration of the Land of a Thousand Hills, we unveiled intriguing insights, dispelled common myths, celebrated Rwanda's distinctiveness, and thoughtfully examined the challenges this extraordinary nation faces today. This journey not only enhanced our understanding but also deepened our appreciation for Rwanda’s remarkable heritage and cultural legacy.\n" +
+        "\n" +
+        "\n" +
+        "\n" +
+        "\n",
+      videoId: "7SOWifBip3s",
     },
     {
       id: 3,
@@ -31,51 +34,7 @@ const Challenges = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <motion.nav
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="border-b border-gray-800"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0">
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent hover:from-blue-300 hover:to-purple-300 transition-all duration-300">
-                SORWAZINI
-              </span>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
-              >
-                Home
-              </a>
-              <a href="#" className="text-white font-medium">
-                E-Lab Challenges
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
-              >
-                Gallery
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
-              >
-                Prototype
-              </a>
-            </div>
-            <Button className="bg-white text-black hover:bg-gray-200 rounded-full px-6 transition-all duration-300 transform hover:scale-105">
-              Let's Talk
-            </Button>
-          </div>
-        </div>
-      </motion.nav>
-
+    <div className="pt-20 sm:pt-24 min-h-[60vh] sm:min-h-[70vh] bg-black text-white">
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
@@ -84,12 +43,13 @@ const Challenges = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            E-lab Challenges
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+            Innovation Sprints
           </h1>
-          <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-            We tackled six challenges as a Think Tank group, exposing us to
-            real-world contexts, complexity, and innovative thinking.
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
+            As Big Steppers, we took on six pivotal challenges that immersed us
+            in real-world contexts, complex dynamics, and the pursuit of
+            innovative solutions.
           </p>
         </motion.div>
 
