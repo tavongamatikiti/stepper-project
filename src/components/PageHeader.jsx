@@ -9,7 +9,7 @@ const PageHeader = ({
 }) => {
   return (
     <section
-      className={`pt-20 sm:pt-24 ${minHeight} bg-black relative overflow-hidden flex items-center`}
+      className={`pt-20 sm:pt-24 ${minHeight} bg-black flex items-center overflow-hidden`}
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
