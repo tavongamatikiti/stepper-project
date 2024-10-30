@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen pt-20 sm:pt-24 bg-black flex items-center relative overflow-hidden">
+    <section className="min-h-[100dvh] pt-20 sm:pt-24 bg-black flex items-center relative overflow-hidden">
       {/* SVG Background - Responsive positioning */}
       <motion.div
         className="absolute inset-0 w-full h-full flex items-center justify-center lg:justify-end"

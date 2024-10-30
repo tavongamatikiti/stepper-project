@@ -4,7 +4,7 @@ import Footer from "@/components/Footer.jsx";
 
 const MainLayout = () => {
   return (
-    <section className="min-h-screen flex flex-col">
+    <section className="min-h-[100dvh] flex flex-col overflow-hidden">
       <Navbar />
       <main className="flex-grow">
         <Outlet />

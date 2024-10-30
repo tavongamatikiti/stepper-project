@@ -4,7 +4,7 @@ import PropTypes from "prop-types"; // Import PropTypes
 const PageHeader = ({
   title,
   description,
-  minHeight = "min-h-[60vh] sm:min-h-[30vh]",
+  minHeight = "min-h-[100dvh]",
   children, // Optional: if you want to add additional content
 }) => {
   return (
