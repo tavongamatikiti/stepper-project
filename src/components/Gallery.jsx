@@ -1,6 +1,7 @@
 import { useState } from "react";
 import GalleryModal from "./GalleryModal";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const Gallery = ({ images = [] }) => {
   // Add default empty array
@@ -70,6 +71,15 @@ const Gallery = ({ images = [] }) => {
       />
     </div>
   );
+};
+
+Gallery.propTypes = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string,
+    }),
+  ),
 };
 
 export default Gallery;

@@ -12,9 +12,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 text-gray-300 min-h-[20vh] flex flex-col justify-between">
       {/* Main Footer Content */}
-      <div className="container mx-auto px-6 py-12">
+      <div className="container mx-auto px-6 py-12 flex-grow">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="text-center md:text-left">
@@ -118,13 +118,13 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
-        <div className="container mx-auto px-6 py-4">
+      <div className="border-t border-gray-800 py-4 md:py-6">
+        <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-center md:text-left">
+            <p className="text-sm text-center md:text-left mb-4 md:mb-0">
               © {currentYear} Your Company Name. All rights reserved.
             </p>
-            <div className="mt-4 md:mt-0">
+            <div>
               <ul className="flex justify-center md:justify-start space-x-6">
                 <li>
                   <a
