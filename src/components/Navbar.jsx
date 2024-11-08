@@ -43,8 +43,8 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <NavLink to="/">HOME</NavLink>
           <NavLink to="/solution">CHALLENGES</NavLink>
-          <NavLink to="/about">GALLERY</NavLink>
-          <NavLink to="/blog">ABOUT</NavLink>
+          <NavLink to="/gallery">GALLERY</NavLink>
+          <NavLink to="/about">ABOUT</NavLink>
           <Link
             to="/contact"
             className="border border-white/80 text-white hover:bg-white hover:text-black transition-colors duration-300 px-6 py-2 rounded-full font-medium backdrop-blur-sm"
@@ -95,8 +95,8 @@ const Navbar = () => {
                 {[
                   { to: "/", text: "HOME" },
                   { to: "/solution", text: "CHALLENGES" },
-                  { to: "/about", text: "GALLERY" },
-                  { to: "/blog", text: "ABOUT US" },
+                  { to: "/gallery", text: "GALLERY" },
+                  { to: "/about", text: "ABOUT US" },
                 ].map((item, index) => (
                   <motion.div
                     key={item.to}

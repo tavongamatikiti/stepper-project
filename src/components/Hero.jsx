@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -361,14 +362,15 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="flex justify-center lg:justify-start"
             >
-              <button
-                onClick={() => console.log("Book a Demo clicked")}
-                className="inline-block bg-white text-black px-5 sm:px-6 py-3 sm:py-4 rounded-full
-                         font-medium hover:bg-gray-100 transition-colors duration-300
-                         text-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-              >
-                Book a Demo
-              </button>
+              <Link to="/about">
+                <button
+                  className="inline-block bg-white text-black px-5 sm:px-6 py-3 sm:py-4 rounded-full
+                   font-medium hover:bg-gray-100 transition-colors duration-300
+                   text-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                >
+                  Explore Our Mission
+                </button>
+              </Link>
             </motion.div>
           </div>
 

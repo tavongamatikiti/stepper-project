@@ -7,6 +7,7 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,9 +21,9 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="text-white text-lg font-semibold mb-4">About Us</h3>
             <p className="text-sm leading-relaxed">
-              We are dedicated to providing quality content and services to our
-              users. Join our community and stay updated with the latest trends
-              and news.
+              We're on a mission to transform agriculture into a powerful engine
+              for job creation, economic growth, and community resilience in
+              Zimbabwe.
             </p>
           </div>
 
@@ -33,44 +34,44 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-sm hover:text-white transition-colors"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/solution"
+                  className="text-sm hover:text-white transition-colors"
+                >
+                  Challenges
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/gallery"
+                  className="text-sm hover:text-white transition-colors"
+                >
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
                   className="text-sm hover:text-white transition-colors"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-sm hover:text-white transition-colors"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm hover:text-white transition-colors"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="text-sm hover:text-white transition-colors"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -91,7 +92,9 @@ const Footer = () => {
               </li>
               <li className="flex items-center justify-center md:justify-start space-x-3">
                 <MapPin size={18} />
-                <span className="text-sm">123 Street Name, City, Country</span>
+                <span className="text-sm">
+                  African Leadership University, Kigali, Rwanda
+                </span>
               </li>
             </ul>
           </div>
@@ -100,16 +103,20 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="text-white text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex justify-center md:justify-start space-x-4">
-              <a href="#" className="hover:text-white transition-colors">
-                <Facebook />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <Twitter />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a
+                href="https://instagram.com/big_steppers6/"
+                className="hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Instagram />
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a
+                href="https://youtube.com/@BIG.STEPPERS006"
+                className="hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Youtube />
               </a>
             </div>
@@ -127,20 +134,20 @@ const Footer = () => {
             <div>
               <ul className="flex justify-center md:justify-start space-x-6">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/privacy"
                     className="text-sm hover:text-white transition-colors"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/terms"
                     className="text-sm hover:text-white transition-colors"
                   >
                     Terms of Service
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

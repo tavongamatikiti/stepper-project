@@ -2,10 +2,15 @@ import Gallery from "@/components/Gallery";
 import { galleryImages } from "@/data/galleryImages";
 import { motion } from "framer-motion";
 import PageHeader from "@/components/PageHeader.jsx";
+import { useEffect } from "react";
 
 const GalleryPage = () => {
   // Add check for galleryImages
   const images = Array.isArray(galleryImages) ? galleryImages : [];
+
+  useEffect(() => {
+    document.title = "BIG STEPPERS | Gallery";
+  }, []);
 
   return (
     <motion.div

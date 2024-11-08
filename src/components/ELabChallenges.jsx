@@ -29,7 +29,11 @@ const ELabChallenges = ({ challenges }) => {
             </p>
           </div>
           <div className={`${challenge.id % 2 === 0 ? "md:order-1" : ""}`}>
-            <YouTubeEmbed videoId={challenge.videoId} />
+            {challenge.videoId ? (
+              <YouTubeEmbed videoId={challenge.videoId} />
+            ) : (
+              <img src={challenge.imageUrl} alt="Challenge Image" />
+            )}{" "}
           </div>
         </motion.div>
       ))}

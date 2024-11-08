@@ -34,22 +34,22 @@ const HelpSection = () => {
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen">
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center">
+    <div className="bg-black text-white py-12">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto mb-4">
+          <h2 className="text-4xl font-bold mb-4 text-center">
             How You Can Help
           </h2>
 
-          <div className="text-center mb-12">
-            <p className="text-lg mb-8 text-gray-300">
+          <div className="text-center mb-4">
+            <p className="text-lg mb-4 text-gray-300">
               Your support can make a lasting impact on the lives of Zimbabwean
               families. Whether through donations, volunteering, or becoming a
               partner, you have the power to help Honde Valley communities
               thrive.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="grid md:grid-cols-3 gap-6 mb-4">
               {cards.map((card, index) => (
                 <HelpCard key={index} {...card} />
               ))}
